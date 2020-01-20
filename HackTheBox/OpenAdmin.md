@@ -36,3 +36,31 @@ Conducting further enumeration, in the following folder, the following database 
 The credentials jimmy:n1nj4W4rri0R! is found to be reusable for jimmy, where ssh login was obtaned for jimmy.
 <img name="jimmy2" src="https://user-images.githubusercontent.com/58163840/72709486-16327d80-3b33-11ea-982b-7c0dfa74fcd2.png">
 
+<h1> Obtaining User 2 </h1>
+During enumeration, there was a folder /var/www/internal which was only accessible by the user "jimmy" or by the group "internal". As we did not have access then as www-data, this folder was not accessible. Now, as user jimmy, this folder is accessible and we can then view its contents. Within the folder, the file main.php seems to allow jimmy to access joanna's ssh keys. 
+
+<img src="https://user-images.githubusercontent.com/58163840/72709662-64478100-3b33-11ea-851d-8dd5ef9d4dcf.png" name="joannakeys">
+
+Knowing that /var/www/ is usually a home directory for apache web servers, further investigation is required to check if there were any internal web servers that were being hosted. Using a netstat command, it was found that there was a internal server listening to port 52846 which could be a web server. Therefore an attempt was made to call the webserver using curl, to main.php. Thus obtaining user joanna's ssh keys.
+
+<img src="https://user-images.githubusercontent.com/58163840/72710030-29921880-3b34-11ea-8986-71d26dcc72b3.png" name="joannakeys2">
+
+To obtain access to joanna via ssh, it is required to crack the passphrase within the ssh key. ssh2john is used to crack the passphrase, which is then revealed to be "bloodninjas".
+
+<img src="https://user-images.githubusercontent.com/58163840/72710469-2ba8a700-3b35-11ea-93e8-772e33428729.png" name="crackkey">
+
+ssh access to joanna is then obtained.
+
+<img src="https://user-images.githubusercontent.com/58163840/72710575-68749e00-3b35-11ea-9558-103ea8671dd9.png" name="joannassh">
+
+The user flag can then be found at joanna's home folder.
+
+<h1> Root </h1>
+
+By using sudo -l, we can discover what sudo privileges the user joanna has, we then find out user joanna can use nano in sudo, by escaping nano, we can then obtain root. To understand how to escape nano, refer to: https://gtfobins.github.io/gtfobins/nano/
+
+<img src="https://user-images.githubusercontent.com/58163840/72710832-e638a980-3b35-11ea-8186-3946ca76ef0a.png" name="sudo">
+
+<img src="https://user-images.githubusercontent.com/58163840/72711025-429bc900-3b36-11ea-83a5-2a4c2c4fbd2b.png" name="rooted">
+
+That concludes the writeup for HackTheBox-OpenAdmin.
