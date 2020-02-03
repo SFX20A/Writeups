@@ -21,6 +21,7 @@ More information can be found here:
 https://medium.com/@knownsec404team/rce-exploits-of-redis-based-on-master-slave-replication-ef7a664ce1d0
 
 By adding our public key into the redis ssh directory, we obtained ssh access.
+
 <img src="https://user-images.githubusercontent.com/58163840/73633911-e0f75680-462d-11ea-859a-31b9f5e8276d.png" name="redis">
 <img src="https://user-images.githubusercontent.com/58163840/73633928-ebb1eb80-462d-11ea-8381-354fa1fca50b.png" name="sshredis"
 
