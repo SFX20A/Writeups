@@ -1,5 +1,5 @@
 <h1> Overview </h1>
-Traverxec is a typical box with relatively straightforward vulnerabilities which can be identified on the get-go.
+Postman is a typical box with relatively straightforward vulnerabilities which can be identified on the get-go.
 The box is similar to what OSCP students would expect when it comes to the certification exam.
 
 The vulnerabiltiies exploited in this box are as follows:
