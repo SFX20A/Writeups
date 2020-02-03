@@ -34,11 +34,11 @@ Where ".{1}" is the length of the password.
 It was then identified that mango has a 16 character password, and admin has a 12 character password.
 
 The following script was then written to extract the passwords of the 2 users:
-https://github.com/SFX20A/Writeups/blob/master/Scripts/nosqlchecker.py
+<p>https://github.com/SFX20A/Writeups/blob/master/Scripts/nosqlchecker.py
 
-The following credentials were obtained:
-mango:h3mXK8RhU~f{]f5H
-admin:t9KcS3>!0B#2
+<p>The following credentials were obtained:
+<p>mango:h3mXK8RhU~f{]f5H
+<p>admin:t9KcS3>!0B#2
 
 <h1>Obtaining user access</h1>
 By using the above credentials for mango, we have obtained SSH access as the user reused his credentials for SSH login.
