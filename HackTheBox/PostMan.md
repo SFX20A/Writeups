@@ -13,7 +13,7 @@ Using a standard nmap command, using default scripts and enumerating versions, r
 
 <img src="https://user-images.githubusercontent.com/58163840/73636846-d8eee500-4634-11ea-90b7-3ce3471248d2.png" name="nmap">
 
-By observing the nmap output, there are 2 possible exploitable vulnerabilities. Namely Redis and Webmin. As the Webmin vulnerability possibly requires credentials, we first set our sets on exploiting redis to obtain user access.
+By observing the nmap output, there are 2 possible exploitable vulnerabilities. Namely Redis and Webmin. As the Webmin vulnerability possibly requires credentials, we first set our sights on exploiting redis to obtain user access.
 
 <h1> Obtaining User </h1>
 The redis exploit was discovered in 2019, whereby any unauthenticated user can write its public key into the redis home directory using the redis cli, thus obtaining SSH access.
