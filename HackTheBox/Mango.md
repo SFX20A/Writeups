@@ -2,7 +2,7 @@
 
 Mango offered several learning opportunities on relatively new technologies which is gaining traction in the recent years, being used on multiple platforms. In which, SQL injection is a well-known vulnerability in this day and age, much less know about at NoSQL injection is possible as well.
 
-The vulnerabiltiies exploited in this box are as follows:
+The vulnerabilities exploited in this box are as follows:
 <ol type="1">
   <li>NoSQL injection</li>
   <li>Credential Reuse</li>
