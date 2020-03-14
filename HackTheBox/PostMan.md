@@ -39,7 +39,7 @@ The user flag is then found in Matt's home folder.
 
 <h1> Obtaining Root </h1>
 
-As we have obtained the username and password for Matt, we can then exploit the webmin vulnerability, as seen below:
+As we have obtained the username and password for Matt, we can then exploit the webmin vulnerability using metasploit, as seen below:
 
 <img src="https://user-images.githubusercontent.com/58163840/73636812-cd032300-4634-11ea-9815-6e34b5716a44.png" name="options">
 <img src="https://user-images.githubusercontent.com/58163840/73636841-d5f3f480-4634-11ea-92fd-f41a3a64feb9.png" name="exploit">
