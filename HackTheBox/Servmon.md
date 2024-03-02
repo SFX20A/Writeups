@@ -1,12 +1,4 @@
----
-layout: post
-title: HackTheBox - Servmon Walkthrough
-date: 2020-06-21 13:32:20 +0800
-description: HackTheBox - Servmon Walkthrough. # Add post description (optional)
-img: servmon.JPG # Add image post (optional)
-fig-caption: # Add figcaption (optional)
-tags: [NVMS, DirectoryTraversal, OSCP, HackTheBox, hydra, burpsuite, winPEAS, NSClient]
----
+
 # Overview
 
 Servmon can be regarded as relatively straightforward box whereby all exploits can be found/referenced from exploitDB and there is no custom exploitation required for the box.
