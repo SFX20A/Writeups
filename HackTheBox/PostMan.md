@@ -1,6 +1,5 @@
 <h1> Overview </h1>
 Postman is a typical box with relatively straightforward vulnerabilities which can be identified on the get-go.
-The box is similar to what OSCP students would expect when it comes to the certification exam.
 
 The vulnerabilities exploited in this box are as follows:
 <ol type="1">
