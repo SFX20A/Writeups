@@ -1,6 +1,6 @@
 <h1>Overview</h1>
 
-<p>OpenAdmin is a relatively easy machine which provides a good level of exposure of what to expect in a standard penetration test, as well as a good reference of how a standard OSCP machine may be like. </p>
+<p>OpenAdmin is a relatively easy machine which provides a good level of exposure of what to expect in a standard penetration test. </p>
 
 <p>The vulnerabilities exploited in the box are as follows: </p>
 <ol type="1">
